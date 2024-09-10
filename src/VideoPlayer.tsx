@@ -4,7 +4,7 @@ import { debounce, isNil } from "lodash";
 import React, { useEffect } from "react";
 import "./VideoPlayer.css";
 
-interface VideoPlayerProps {
+export interface VideoPlayerProps {
   source: string;
   videoSrcChange?: () => void;
   onVideoReady?: (player: HTMLVideoElement) => void;
