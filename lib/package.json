@@ -1,7 +1,12 @@
 {
-  "name": "indexeddb-video-mono",
+  "name": "indexeddb-video",
   "version": "0.0.7",
   "type": "module",
+  "main": "dist/indexeddb-video.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -10,9 +15,12 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "indexeddb-video": "^0.0.7",
+    "@types/lodash": "^4.17.7",
+    "hls.js": "^1.5.15",
+    "lodash": "^4.17.21",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "vite-plugin-dts": "^4.2.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",

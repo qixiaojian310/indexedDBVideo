@@ -1,8 +1,8 @@
 import "./App.css";
-import VideoPlayer from "../src/VideoPlayer";
+import { IndexedDBCacheVideo } from "indexeddb-video";
 
 function App() {
-  return <VideoPlayer source="test" />;
+  return <IndexedDBCacheVideo source="test" />;
 }
 
 export default App;

@@ -32,6 +32,6 @@
       "config": ["config.ts"]
     }
   },
-  "include": ["src", "example/App.tsx", "example/main.tsx"],
-  "references": [{ "path": "./tsconfig.node.json" }],
+  "include": ["src", "example/App.tsx", "example/main.tsx", "example/vite-env.d.ts"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }
