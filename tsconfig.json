@@ -19,6 +19,9 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
+
+    "declaration": true,                 // 生成类型声明文件
+    "declarationDir": "dist/types",      // 声明文件输出目录
     
     "allowJs": true,
     "checkJs": false,
@@ -29,6 +32,6 @@
       "config": ["config.ts"]
     }
   },
-  "include": ["src", "example/App.tsx", "example/main.tsx"],
+  "include": ["src", "example/App.tsx", "example/main.tsx", "example/vite-env.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
